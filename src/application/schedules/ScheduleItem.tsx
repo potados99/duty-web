@@ -20,7 +20,7 @@ export default function ScheduleItem({ schedule }: Props) {
           <b>"{schedule.name}"</b>까지 {daysLeft}일
         </PrimaryText>
       </Horizontal>
-      <PrimaryText>{format(schedule.date, "yyyy년 M월 d일")}</PrimaryText>
+      <PrimaryText>{format(schedule.date, "yyyy년 MM월 dd일")}</PrimaryText>
     </Wrapper>
   );
 }

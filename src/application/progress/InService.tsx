@@ -18,12 +18,14 @@ type Props = {
 };
 
 export default function InService({ firstSchedule, lastSchedule }: Props) {
-  const total = differenceInDays(lastSchedule.date, firstSchedule.date);
-  const progress = differenceInDays(new Date(), firstSchedule.date);
   const daysLeft = differenceInDays(lastSchedule.date, new Date());
-  const percentage =
-    (100 * differenceInMilliseconds(new Date(), firstSchedule.date)) /
-    differenceInMilliseconds(lastSchedule.date, firstSchedule.date);
+  const millisPast = differenceInMilliseconds(new Date(), firstSchedule.date);
+  const millisTotal = differenceInMilliseconds(
+    lastSchedule.date,
+    firstSchedule.date
+  );
+
+  const percentage = (100 * Math.max(millisPast, 0)) / millisTotal;
   const percentageRounded =
     Math.round((percentage + Number.EPSILON) * 100) / 100;
 
@@ -52,12 +54,12 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
         </Horizontal>
       </HorizontalCenter>
 
-      <ProgressBar animated max={total} now={progress}></ProgressBar>
+      <ProgressBar animated max={millisTotal} now={millisPast}></ProgressBar>
     </Wrapper>
   );
 }
 
 const Wrapper = styled.div`
-  margin-top: 24px;
+  margin-top: 28px;
   margin-bottom: 36px;
 `;

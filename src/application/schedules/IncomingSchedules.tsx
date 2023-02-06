@@ -29,6 +29,6 @@ export default function IncomingSchedules() {
 }
 
 const Wrapper = styled.div`
-  margin-top: 24px;
-  margin-bottom: 32px;
+  margin-top: 28px;
+  margin-bottom: 36px;
 `;
