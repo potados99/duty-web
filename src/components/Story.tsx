@@ -25,6 +25,8 @@ export default function Story({
       <LinkedButton href={actionHref}>
         {actionLabel} {">"}
       </LinkedButton>
+
+      <img src={image} width="100%" />
     </Wrapper>
   );
 }
@@ -36,5 +38,4 @@ const Wrapper = styled.div`
   justify-content: center;
 
   margin-top: 24px;
-  margin-bottom: 24px;
 `;

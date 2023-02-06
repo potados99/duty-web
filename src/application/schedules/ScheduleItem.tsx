@@ -2,7 +2,8 @@ import React from "react";
 import Schedule from "../../entities/Schedule";
 import { differenceInDays } from "date-fns";
 import styled from "styled-components";
-import { Horizontal } from "../../components/palette";
+import { Horizontal, PrimaryText } from "../../components/palette";
+import { format } from "date-fns";
 
 type Props = {
   schedule: Schedule;
@@ -14,12 +15,12 @@ export default function ScheduleItem({ schedule }: Props) {
   return (
     <Wrapper>
       <Horizontal>
-        <div>{schedule.emoji}</div>
-        <div>
+        <PrimaryText style={{ marginRight: 6 }}>{schedule.emoji}</PrimaryText>
+        <PrimaryText>
           <b>"{schedule.name}"</b>까지 {daysLeft}일
-        </div>
+        </PrimaryText>
       </Horizontal>
-      <div>{schedule.date.toLocaleDateString()}</div>
+      <PrimaryText>{format(schedule.date, "yyyy년 M월 d일")}</PrimaryText>
     </Wrapper>
   );
 }
