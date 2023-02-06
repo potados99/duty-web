@@ -1,8 +1,19 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+  font-family: 'KoPubDotum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif !important; /*무력으로라도 너의 탄압받은 font-family를 자유롭게 하고 깨우치게 해주리라!*/
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+  font-family: "KoPubDotum";
+  src: url("../public/fonts/KoPub Dotum Medium.ttf");
+}
+
+@font-face {
+  font-family: "KoPubDotum";
+  src: url("../public/fonts/KoPub Dotum Bold.ttf");
+  font-weight: bold;
 }

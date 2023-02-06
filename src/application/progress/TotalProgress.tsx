@@ -2,7 +2,6 @@ import React, { useCallback, useEffect, useState } from "react";
 import Schedule from "../../entities/Schedule";
 import InService from "./InService";
 import AfterDischarge from "./AfterDischarge";
-import Section from "../../components/Section";
 
 export default function TotalProgress() {
   const [firstSchedule, setFirstSchedule] = useState<Schedule>();

@@ -21,6 +21,7 @@ export default function Story({
     <Wrapper>
       <TitleTextInverse>{title}</TitleTextInverse>
       <PrimaryTextInverse>{body}</PrimaryTextInverse>
+
       <LinkedButton href={actionHref}>
         {actionLabel} {">"}
       </LinkedButton>
@@ -34,6 +35,6 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 `;

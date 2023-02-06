@@ -2,6 +2,7 @@ import React from "react";
 import Schedule from "../../entities/Schedule";
 import { differenceInDays } from "date-fns";
 import styled from "styled-components";
+import { Horizontal } from "../../components/palette";
 
 type Props = {
   schedule: Schedule;
@@ -12,12 +13,12 @@ export default function ScheduleItem({ schedule }: Props) {
 
   return (
     <Wrapper>
-      <HorizontalWrapper>
+      <Horizontal>
         <div>{schedule.emoji}</div>
         <div>
           <b>"{schedule.name}"</b>까지 {daysLeft}일
         </div>
-      </HorizontalWrapper>
+      </Horizontal>
       <div>{schedule.date.toLocaleDateString()}</div>
     </Wrapper>
   );
@@ -28,12 +29,7 @@ const Wrapper = styled.div`
   flex: 1;
   flex-direction: row;
   justify-content: space-between;
-  margin-top: 12px;
-  margin-bottom: 12px;
-`;
 
-const HorizontalWrapper = styled.div`
-  display: flex;
-  flex: 1;
-  flex-direction: row;
+  margin-top: 16px;
+  margin-bottom: 16px;
 `;
