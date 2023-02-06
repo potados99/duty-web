@@ -1,14 +1,20 @@
 import rawSchedules from "../schedules.json";
 
 export default class Schedule {
-  constructor(readonly name: string, readonly date: Date) {}
+  constructor(
+    readonly name: string,
+    readonly date: Date,
+    readonly emoji: string
+  ) {}
 
   private static cache?: Schedule[] = undefined;
 
   static async getAll(): Promise<Schedule[]> {
     if (this.cache == null) {
       this.cache = await Promise.all(
-        rawSchedules.map((raw) => new Schedule(raw.name, new Date(raw.date)))
+        rawSchedules.map(
+          (raw) => new Schedule(raw.name, new Date(raw.date), raw.emoji)
+        )
       );
     }
 

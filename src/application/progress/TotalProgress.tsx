@@ -2,6 +2,7 @@ import React, { useCallback, useEffect, useState } from "react";
 import Schedule from "../../entities/Schedule";
 import InService from "./InService";
 import AfterDischarge from "./AfterDischarge";
+import Section from "../../components/Section";
 
 export default function TotalProgress() {
   const [firstSchedule, setFirstSchedule] = useState<Schedule>();
@@ -21,13 +22,9 @@ export default function TotalProgress() {
     lastSchedule != null &&
     new Date() < lastSchedule.date;
 
-  return (
-    <>
-      {yet ? (
-        <InService firstSchedule={firstSchedule} lastSchedule={lastSchedule} />
-      ) : (
-        <AfterDischarge />
-      )}
-    </>
+  return yet ? (
+    <InService firstSchedule={firstSchedule} lastSchedule={lastSchedule} />
+  ) : (
+    <AfterDischarge />
   );
 }

@@ -15,10 +15,10 @@ export default function IncomingSchedules() {
   }, []);
 
   return (
-    <Section>
+    <>
       {schedules?.map((s) => (
         <ScheduleItem schedule={s} />
       ))}
-    </Section>
+    </>
   );
 }
