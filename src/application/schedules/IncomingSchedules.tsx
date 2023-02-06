@@ -22,7 +22,7 @@ export default function IncomingSchedules() {
         <TitleText>남은 일정</TitleText>
       </HorizontalCenter>
       {schedules?.map((s) => (
-        <ScheduleItem schedule={s} />
+        <ScheduleItem key={s.name} schedule={s} />
       ))}
     </Wrapper>
   );

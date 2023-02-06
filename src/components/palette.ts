@@ -50,3 +50,8 @@ export const LinkedButton = styled.a`
   margin-top: 8px;
   text-decoration: none;
 `;
+
+export const Space = styled.div`
+  height: 12px;
+  background-color: #fff;
+`;

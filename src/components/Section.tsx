@@ -11,7 +11,6 @@ export default function Section(props: Props) {
       <Container {...props}>
         <Content>{props.children}</Content>
       </Container>
-      <Space />
     </>
   );
 }
@@ -31,9 +30,4 @@ const Container = styled.div<Props>`
 const Content = styled.div`
   width: 100%;
   max-width: 600px;
-`;
-
-const Space = styled.div`
-  height: 12px;
-  background-color: #fff;
 `;
