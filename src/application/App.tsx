@@ -6,10 +6,13 @@ import IncomingSchedules from "./schedules/IncomingSchedules";
 import Section from "../components/Section";
 import Footer from "./footer/Footer";
 import { Space } from "../components/palette";
+import Cover from "./cover/Cover";
 
 function App() {
   return (
     <div>
+      <Cover />
+
       <Section backgroundColor="#fff">
         <TotalProgress />
       </Section>

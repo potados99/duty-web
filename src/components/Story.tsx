@@ -1,6 +1,8 @@
 import React from "react";
 import { LinkedButton, PrimaryTextInverse, TitleTextInverse } from "./palette";
 import styled from "styled-components";
+import { useInView } from "react-intersection-observer";
+import FadeIn from "react-fade-in";
 
 type Props = {
   title: string;
@@ -17,10 +19,17 @@ export default function Story({
   actionLabel,
   actionHref,
 }: Props) {
+  const [ref, inView] = useInView({
+    triggerOnce: true,
+  });
+
   return (
-    <Wrapper>
+    <Wrapper ref={ref}>
       <TitleTextInverse>{title}</TitleTextInverse>
-      <PrimaryTextInverse style={{ marginTop: 4 }}>{body}</PrimaryTextInverse>
+
+      <FadeIn visible={inView} transitionDuration={700} delay={400}>
+        <PrimaryTextInverse style={{ marginTop: 4 }}>{body}</PrimaryTextInverse>
+      </FadeIn>
 
       <LinkedButton href={actionHref} style={{ marginTop: 12 }}>
         {actionLabel} {">"}

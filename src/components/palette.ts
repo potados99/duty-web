@@ -15,13 +15,19 @@ export const Horizontal = styled.div`
 `;
 
 export const BigText = styled.div`
-  color: #222;
+  color: #234;
+  font-size: 52px;
+  font-weight: bold;
+`;
+
+export const BigTextInverse = styled.div`
+  color: #eee;
   font-size: 52px;
   font-weight: bold;
 `;
 
 export const TitleText = styled.div`
-  color: #222;
+  color: #234;
   font-size: 18px;
   font-weight: bold;
   margin-bottom: 8px;
@@ -35,7 +41,7 @@ export const TitleTextInverse = styled.div`
 `;
 
 export const PrimaryText = styled.div`
-  color: #222;
+  color: #234;
   font-size: 16px;
 `;
 
