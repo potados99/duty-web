@@ -31,6 +31,6 @@ const Wrapper = styled.div`
   flex-direction: row;
   justify-content: space-between;
 
-  margin-top: 16px;
-  margin-bottom: 16px;
+  margin-top: 24px;
+  margin-bottom: 24px;
 `;

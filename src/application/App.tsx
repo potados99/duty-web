@@ -10,13 +10,13 @@ import { Space } from "../components/palette";
 function App() {
   return (
     <div>
-      <Section backgroundColor="#f2f2f8">
+      <Section backgroundColor="#fff">
         <TotalProgress />
       </Section>
 
       <Space />
 
-      <Section backgroundColor="#f2f2f8">
+      <Section backgroundColor="#f9f9fd">
         <IncomingSchedules />
       </Section>
 
@@ -34,7 +34,7 @@ function App() {
 
       <Space />
 
-      <Section backgroundColor="#f2f2f8">
+      <Section backgroundColor="#f9f9fd">
         <Footer />
       </Section>
     </div>

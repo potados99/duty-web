@@ -20,9 +20,9 @@ export default function Story({
   return (
     <Wrapper>
       <TitleTextInverse>{title}</TitleTextInverse>
-      <PrimaryTextInverse>{body}</PrimaryTextInverse>
+      <PrimaryTextInverse style={{ marginTop: 4 }}>{body}</PrimaryTextInverse>
 
-      <LinkedButton href={actionHref}>
+      <LinkedButton href={actionHref} style={{ marginTop: 12 }}>
         {actionLabel} {">"}
       </LinkedButton>
 
@@ -37,5 +37,5 @@ const Wrapper = styled.div`
   align-items: center;
   justify-content: center;
 
-  margin-top: 28px;
+  margin-top: 36px;
 `;

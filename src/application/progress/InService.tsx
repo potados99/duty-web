@@ -40,7 +40,7 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
           />
           <BigText>일</BigText>
         </Horizontal>
-        <Horizontal>
+        <Horizontal style={{ marginTop: 24 }}>
           <TitleText style={{ marginRight: 6 }}>복무율 </TitleText>
           <AnimatedNumber
             animateToNumber={percentageRounded}
@@ -60,6 +60,6 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
 }
 
 const Wrapper = styled.div`
-  margin-top: 28px;
-  margin-bottom: 36px;
+  margin-top: 36px;
+  margin-bottom: 42px;
 `;
