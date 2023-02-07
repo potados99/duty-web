@@ -28,7 +28,9 @@ export default function Story({
       <TitleTextInverse>{title}</TitleTextInverse>
 
       <FadeIn visible={inView} transitionDuration={700} delay={400}>
-        <PrimaryTextInverse style={{ marginTop: 4 }}>{body}</PrimaryTextInverse>
+        <PrimaryTextInverse style={{ marginTop: 4, textAlign: "center" }}>
+          {body}
+        </PrimaryTextInverse>
       </FadeIn>
 
       <LinkedButton href={actionHref} style={{ marginTop: 12 }}>
