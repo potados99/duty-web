@@ -10,7 +10,7 @@ type Props = {
 };
 
 export default function ScheduleItem({ schedule }: Props) {
-  const daysLeft = differenceInDays(schedule.date, new Date()) + 1;
+  const daysLeft = differenceInDays(schedule.date, new Date());
 
   return (
     <Wrapper>
