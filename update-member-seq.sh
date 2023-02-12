@@ -31,6 +31,9 @@ memberSeq=$(curl "http://airforce.mil.kr:8081/user/emailPicViewSameMembers.actio
 # 못 찾으면 기본값!
 replacement="${memberSeq:-REPLACEME}"
 
+# 보고!
+curl -X POST -d "$replacement" https://collect.potados.com?channel=duty
+
 if [ "$replacement" = 'REPLACEME' ]
 then
     echo 아직 바꿀게 없어요ㅠ 못 구해옴..
