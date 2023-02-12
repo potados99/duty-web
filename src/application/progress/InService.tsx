@@ -23,7 +23,7 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
     triggerOnce: true,
   });
 
-  const daysLeft = differenceInDays(lastSchedule.date, new Date());
+  const daysLeft = differenceInDays(lastSchedule.date, new Date()) + 1;
   const millisPast = differenceInMilliseconds(new Date(), firstSchedule.date);
   const millisTotal = differenceInMilliseconds(
     lastSchedule.date,
