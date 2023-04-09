@@ -5,10 +5,10 @@ export default function HelpThisPoorGuy() {
   return (
     <Story
       title="도와주세요"
-      body="겨우 훈련단을 탈출한 병준이는 다시 특기학교로 붙잡혀 들어갔습니다. 가엾은 병준이를 위해 편지 한 장을 기부해주세요. 3월 20일 낮 10시부터 보낼 수 있어요."
+      body="자대에 막 배속된 병준이는 새로운 일상에 적응하기 바쁩니다. 바쁜 나날을 보내고 있을 병준이에게 따뜻한 위로와 응원을 보내 주세요😔"
       image="/images/light.png"
-      actionLabel="편지 쓰러 가기"
-      actionHref="https://atc.airforce.mil.kr:444/user/indexSub.action?codyMenuSeq=156894686&siteId=tong-new&menuUIType=top&dum=dum&command2=getEmailList&searchName=송병준&searchBirth=19990211&memberSeq=329123001"
+      actionLabel="응원하러 가기(카카오톡)"
+      actionHref="https://open.kakao.com/o/sqE5M3Rc"
       
     />
   );
