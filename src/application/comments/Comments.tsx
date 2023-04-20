@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 
 /**
@@ -7,6 +7,14 @@ import styled from "styled-components";
  * @constructor
  */
 export default function Comments() {
+  useEffect(() => {
+    // @ts-ignore
+    if (window.FB) {
+      // @ts-ignore
+      window.FB.XFBML.parse();
+    }
+  }, []);
+
   return (
     <Container>
       <div
