@@ -7,41 +7,14 @@ import Section from "../components/Section";
 import Footer from "./footer/Footer";
 import { Space } from "../components/palette";
 import Cover from "./cover/Cover";
+import Contents from "./Contents";
+import styled from "styled-components";
 
-function App() {
+export default function App() {
   return (
-    <div>
+    <>
       <Cover />
-
-      <Section backgroundColor="#fff">
-        <TotalProgress />
-      </Section>
-
-      <Space />
-
-      <Section backgroundColor="#f9f9fd">
-        <IncomingSchedules />
-      </Section>
-
-      <Space />
-
-      <Section backgroundColor="#222">
-        <HelpThisPoorGuy />
-      </Section>
-
-      <Space />
-
-      <Section backgroundColor="#222">
-        <HowIsHeGoing />
-      </Section>
-
-      <Space />
-
-      <Section backgroundColor="#f9f9fd">
-        <Footer />
-      </Section>
-    </div>
+      <Contents />
+    </>
   );
 }
-
-export default App;

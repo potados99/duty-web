@@ -17,3 +17,6 @@ body {
   src: url("../public/fonts/KoPub Dotum Bold.ttf");
   font-weight: bold;
 }
+
+/* without this, 'data-width: 100%' will not work. */
+.fb-comments, .fb-comments span, .fb-comments iframe { width: 100% !important; }

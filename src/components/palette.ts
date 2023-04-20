@@ -59,5 +59,5 @@ export const LinkedButton = styled.a`
 
 export const Space = styled.div`
   height: 12px;
-  background-color: #fff;
+  background-color: #f9f9f9;
 `;
