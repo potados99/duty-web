@@ -64,7 +64,16 @@ const Main = styled.div`
   max-width: 800px;
 
   border: none;
-  @media (min-width: 800px) {
+  @media (min-width: 800px) and (max-width: 1000px) {
+    border: 2px solid #efefef;
+    border-top: none;
+    border-bottom: none;
+  }
+  @media (min-width: 1000px) and (max-width: 1200px) {
+    border: 2px none #efefef;
+    border-right-style: solid;
+  }
+  @media (min-width: 1200px) {
     border: 2px solid #efefef;
     border-top: none;
     border-bottom: none;
@@ -73,7 +82,7 @@ const Main = styled.div`
 
 const Side = styled.div`
   display: none;
-  @media (min-width: 1024px) {
+  @media (min-width: 1000px) {
     display: unset;
     width: 400px;
     height: 1px; // if full height it will not float.
@@ -85,7 +94,7 @@ const Side = styled.div`
 
 const Additional = styled.div`
   display: none;
-  @media (max-width: 1023px) {
+  @media (max-width: 1000px) {
     display: unset;
   }
 `;
