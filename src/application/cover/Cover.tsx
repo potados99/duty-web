@@ -2,6 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import { BigText } from "../../components/palette";
 import FadeIn from "react-fade-in";
+import SpeechBubble from "../../components/SpeechBubble";
 
 export default function Cover() {
   return (
@@ -12,12 +13,16 @@ export default function Cover() {
             style={{
               color: "#234",
               textAlign: "center",
+              marginBottom: 16,
             }}
           >
             병준이의
             <br />
             군대 여행
           </BigText>
+        </FadeIn>
+        <FadeIn delay={600} transitionDuration={600}>
+          <SpeechBubble />
         </FadeIn>
       </TitleBox>
       <ArrowBox>
@@ -50,6 +55,7 @@ const Wrapper = styled.div`
 const TitleBox = styled.div`
   display: flex;
   flex: 1;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
 `;
