@@ -8,10 +8,14 @@ import styled from "styled-components";
  */
 export default function Comments() {
   useEffect(() => {
-    // @ts-ignore
-    if (window.FB) {
+    try {
       // @ts-ignore
-      window.FB.XFBML.parse();
+      if (window.FB) {
+        // @ts-ignore
+        window.FB.XFBML.parse();
+      }
+    } catch (e) {
+      console.log(`Facebook shit! ${e}`);
     }
   }, []);
 
