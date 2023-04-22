@@ -22,6 +22,7 @@ export default function Comments() {
         data-href="https://duty.potados.com"
         data-width="100%"
         data-numposts="5"
+        data-order-by="reverse_time"
       ></div>
     </Container>
   );
