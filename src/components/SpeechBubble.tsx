@@ -4,10 +4,11 @@ import styled from "styled-components";
 export type Message = {
   id: string;
   channel: string;
-  text: string;
-  date: Date;
-  sourceIp: string;
+  timestamp: number;
+  date: string;
   userAgent: string;
+  sourceIp: string;
+  body: string;
 };
 
 export default function SpeechBubble() {
@@ -16,28 +17,28 @@ export default function SpeechBubble() {
   useEffect(() => {
     fetch("https://collect.potados.com/duty-feed/last?response=api")
       .then((r) => r.json())
-      .then((t) =>
-        setMessage({
-          id: t.id,
-          channel: t.channel,
-          text: t.body,
-          date: new Date(t.timestamp),
-          sourceIp: t.sourceIp,
-          userAgent: t.userAgent,
-        })
-      )
-      .catch();
+      .then(setMessage)
+      .catch(console.log);
   }, []);
 
   const withMessage = (
-    <Container onClick={() => alert(JSON.stringify(message, null, 4))}>
+    <Container
+      onClick={(e) => {
+        alert(JSON.stringify(message, null, 4));
+        e.stopPropagation();
+      }}
+    >
       <Avatar src="/touch-icon.png" />
       <Texts>
         <TitleLine>
           <BubbleTitle>감자도스</BubbleTitle>
-          <BubbleDate>{message?.date.toLocaleDateString()}</BubbleDate>
+          <BubbleDate>
+            {new Date(message?.timestamp ?? 0).toLocaleDateString("ko-KR", {
+              timeZone: "Asia/Seoul",
+            })}
+          </BubbleDate>
         </TitleLine>
-        <BubbleBody>{message?.text}</BubbleBody>
+        <BubbleBody>{message?.body}</BubbleBody>
       </Texts>
     </Container>
   );
