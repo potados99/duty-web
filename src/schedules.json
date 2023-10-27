@@ -20,9 +20,19 @@
     "emoji": "\uD83E\uDD79"
   },
   {
+    "name": "10% 달성",
+    "date": "2023-04-18",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
     "name": "첫 번째 휴가",
     "date": "2023-05-13",
     "emoji": "\uD83E\uDD79"
+  },
+  {
+    "name": "20% 달성",
+    "date": "2023-06-21",
+    "emoji": "\uD83D\uDEA9"
   },
   {
     "name": "두 번째 휴가",
@@ -35,14 +45,54 @@
     "emoji": "\uD83E\uDD79"
   },
   {
+    "name": "30% 달성",
+    "date": "2023-08-24",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
     "name": "상병 진급",
     "date": "2023-10-13",
     "emoji": "\uD83D\uDE06"
   },
   {
+    "name": "40% 달성",
+    "date": "2023-10-26",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "네 번째 휴가",
+    "date": "2023-10-28",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
+    "name": "50% 달성",
+    "date": "2023-12-29",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "60% 달성",
+    "date": "2024-03-02",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
     "name": "병장 진급",
     "date": "2024-04-13",
     "emoji": "\uD83E\uDD29"
+  },
+  {
+    "name": "70% 달성",
+    "date": "2024-05-05",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "80% 달성",
+    "date": "2024-07-08",
+    "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "90% 달성",
+    "date": "2024-09-10",
+    "emoji": "\uD83D\uDEA9"
   },
   {
     "name": "전역",

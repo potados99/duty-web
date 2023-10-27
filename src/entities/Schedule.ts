@@ -1,4 +1,5 @@
 import rawSchedules from "../schedules.json";
+import {isSameDay} from "date-fns";
 
 export default class Schedule {
   constructor(
@@ -24,7 +25,7 @@ export default class Schedule {
   static async getIncoming(): Promise<Schedule[]> {
     const all = await Schedule.getAll();
 
-    return all.filter((s) => s.date > new Date());
+    return all.filter((s) => s.date > new Date() || isSameDay(s.date, new Date()));
   }
 
   static async getFirst(): Promise<Schedule | undefined> {

@@ -24,6 +24,7 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
   });
 
   const daysLeft = differenceInDays(lastSchedule.date, new Date());
+  const daysPast = differenceInDays(new Date(), firstSchedule.date);
   const millisPast = differenceInMilliseconds(new Date(), firstSchedule.date);
   const millisTotal = differenceInMilliseconds(
     lastSchedule.date,
@@ -35,7 +36,7 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
     Math.round((percentage + Number.EPSILON) * 100) / 100;
 
   return (
-    <Wrapper ref={ref}>
+    <Wrapper ref={ref} onClick={() => alert(`${daysPast}일 지났어요!`)}>
       <HorizontalCenter style={{ marginBottom: 21 }}>
         <TitleText>{lastSchedule.name}까지</TitleText>
         <FadeIn visible={inView}>
