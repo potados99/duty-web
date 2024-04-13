@@ -85,9 +85,19 @@
     "emoji": "\uD83D\uDEA9"
   },
   {
+    "name": "일곱 번째 휴가",
+    "date": "2024-02-13",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
     "name": "60% 달성",
     "date": "2024-03-02",
     "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "여덟 번째 휴가",
+    "date": "2024-04-01",
+    "emoji": "\uD83C\uDFDD\uFE0F"
   },
   {
     "name": "병장 진급",
@@ -98,6 +108,16 @@
     "name": "70% 달성",
     "date": "2024-05-05",
     "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "아홉 번째 휴가",
+    "date": "2024-05-06",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
+    "name": "열 번째 휴가",
+    "date": "2024-05-24",
+    "emoji": "\uD83C\uDFDD\uFE0F"
   },
   {
     "name": "80% 달성",
