@@ -116,7 +116,12 @@
   },
   {
     "name": "열 번째 휴가",
-    "date": "2024-05-24",
+    "date": "2024-05-23",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
+    "name": "열한 번째 휴가",
+    "date": "2024-07-05",
     "emoji": "\uD83C\uDFDD\uFE0F"
   },
   {
@@ -125,9 +130,24 @@
     "emoji": "\uD83D\uDEA9"
   },
   {
+    "name": "열한 번째 휴가",
+    "date": "2024-08-02",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
     "name": "90% 달성",
     "date": "2024-09-10",
     "emoji": "\uD83D\uDEA9"
+  },
+  {
+    "name": "열두 번째 휴가",
+    "date": "2024-09-19",
+    "emoji": "\uD83C\uDFDD\uFE0F"
+  },
+  {
+    "name": "열세 번째 휴가",
+    "date": "2024-10-08",
+    "emoji": "\uD83C\uDFDD\uFE0F"
   },
   {
     "name": "전역",
