@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/static/css/main.e5fdf4ab.css",
-    "main.js": "/static/js/main.c1aa05e4.js",
+    "main.js": "/static/js/main.dbb114c4.js",
     "static/media/KoPub Dotum Medium.ttf": "/static/media/KoPub Dotum Medium.6ce65b63cad65307a5dc.ttf",
     "static/media/KoPub Dotum Bold.ttf": "/static/media/KoPub Dotum Bold.1d4d18706b03a75a817a.ttf",
     "index.html": "/index.html",
     "main.e5fdf4ab.css.map": "/static/css/main.e5fdf4ab.css.map",
-    "main.c1aa05e4.js.map": "/static/js/main.c1aa05e4.js.map"
+    "main.dbb114c4.js.map": "/static/js/main.dbb114c4.js.map"
   },
   "entrypoints": [
     "static/css/main.e5fdf4ab.css",
-    "static/js/main.c1aa05e4.js"
+    "static/js/main.dbb114c4.js"
   ]
 }
