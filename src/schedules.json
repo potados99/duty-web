@@ -111,18 +111,23 @@
   },
   {
     "name": "아홉 번째 휴가",
-    "date": "2024-05-06",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "date": "2024-05-05",
+    "emoji": "\uD83E\uDE79"
   },
   {
     "name": "열 번째 휴가",
     "date": "2024-05-23",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "emoji": "\uD83C\uDF40"
   },
   {
     "name": "열한 번째 휴가",
-    "date": "2024-07-05",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "date": "2024-06-12",
+    "emoji": "\uD83C\uDF1F"
+  },
+  {
+    "name": "열두 번째 휴가",
+    "date": "2024-07-06",
+    "emoji": "\uD83C\uDF20"
   },
   {
     "name": "80% 달성",
@@ -130,9 +135,24 @@
     "emoji": "\uD83D\uDEA9"
   },
   {
-    "name": "열두 번째 휴가",
-    "date": "2024-08-02",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "name": "열세 번째 휴가",
+    "date": "2024-07-22",
+    "emoji": "\uD83E\uDDE9"
+  },
+  {
+    "name": "열네 번째 휴가",
+    "date": "2024-08-04",
+    "emoji": "\uD83C\uDFB8"
+  },
+  {
+    "name": "열다섯 번째 휴가",
+    "date": "2024-08-21",
+    "emoji": "\uD83C\uDF07"
+  },
+  {
+    "name": "열여섯 번째 휴가",
+    "date": "2024-09-05",
+    "emoji": "\uD83C\uDFD6\uFE0F"
   },
   {
     "name": "90% 달성",
@@ -140,14 +160,19 @@
     "emoji": "\uD83D\uDEA9"
   },
   {
-    "name": "열세 번째 휴가",
-    "date": "2024-09-19",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "name": "열일곱 번째 휴가",
+    "date": "2024-09-21",
+    "emoji": "\uD83E\uDD73"
   },
   {
-    "name": "열네 번째 휴가",
-    "date": "2024-10-08",
-    "emoji": "\uD83C\uDFDD\uFE0F"
+    "name": "열여덟 번째 휴가",
+    "date": "2024-10-09",
+    "emoji": "\uD83E\uDD7A"
+  },
+  {
+    "name": "열아홉 번째 휴가",
+    "date": "2024-10-24",
+    "emoji": "\uD83D\uDE09"
   },
   {
     "name": "전역",
