@@ -48,7 +48,7 @@ const Wrapper = styled.div`
 
   height: 100vh;
 
-  background: linear-gradient(white, #f9f2ff, #d9dbfa);
+  background: linear-gradient(white, #f2f4ff, #d0d5ec);
   word-break: keep-all;
 `;
 
