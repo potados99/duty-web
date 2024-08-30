@@ -4,10 +4,11 @@ import styled from "styled-components";
 export default function Footer() {
   return (
     <Wrapper>
-      <div>© 2023 송병준</div>
-      <div>
-        If a man does not keep pace with his companions, <br />
-        perhaps it is because he hears a different drummer.
+      <div>© 2023-2024 송병준</div>
+      <div style={{ textAlign: "center" }}>
+        Do not go gentle into that good night,
+        <br />
+        Rage, rage against the dying of the light.
       </div>
     </Wrapper>
   );

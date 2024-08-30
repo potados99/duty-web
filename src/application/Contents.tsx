@@ -1,13 +1,13 @@
 import React from "react";
-import Section from "../components/Section";
-import TotalProgress from "./progress/TotalProgress";
-import { Space } from "../components/palette";
-import IncomingSchedules from "./schedules/IncomingSchedules";
-import HelpThisPoorGuy from "./stories/HelpThisPoorGuy";
-import HowIsHeGoing from "./stories/HowIsHeGoing";
 import Footer from "./footer/Footer";
 import styled from "styled-components";
+import Section from "../components/Section";
 import Comments from "./comments/Comments";
+import { Space } from "../components/palette";
+import HowIsHeGoing from "./stories/HowIsHeGoing";
+import TotalProgress from "./progress/TotalProgress";
+import HelpThisPoorGuy from "./stories/HelpThisPoorGuy";
+import IncomingSchedules from "./schedules/IncomingSchedules";
 
 export default function Contents() {
   return (
