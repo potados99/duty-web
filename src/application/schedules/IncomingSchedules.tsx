@@ -2,7 +2,11 @@ import React, { useCallback, useEffect, useState } from "react";
 import Schedule from "../../entities/Schedule";
 import ScheduleItem from "./ScheduleItem";
 import styled from "styled-components";
-import { HorizontalCenter, TitleText } from "../../components/palette";
+import {
+  HorizontalCenter,
+  PrimaryText,
+  TitleText,
+} from "../../components/palette";
 import FadeIn from "react-fade-in";
 import { useInView } from "react-intersection-observer";
 import Checkbox from "../../components/Checkbox";
@@ -42,9 +46,15 @@ export default function IncomingSchedules() {
         </FadeIn>
       )}
       <FadeIn visible={inView} delay={200}>
-        {incomingSchedules.map((s) => (
-          <ScheduleItem key={s.name} schedule={s} />
-        ))}
+        {incomingSchedules.length > 0 ? (
+          incomingSchedules.map((s) => (
+            <ScheduleItem key={s.name} schedule={s} />
+          ))
+        ) : (
+          <PrimaryText style={{ textAlign: "center", margin: 24 }}>
+            남은 일정이 없어요!
+          </PrimaryText>
+        )}
       </FadeIn>
     </Wrapper>
   );
