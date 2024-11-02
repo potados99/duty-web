@@ -1,22 +1,32 @@
 body {
-  margin: 0;
-  font-family: 'KoPubDotum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    margin: 0;
+    font-family: 'KoPubDotum', -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif !important; /*무력으로라도 너의 탄압받은 font-family를 자유롭게 하고 깨우치게 해주리라!*/
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
 }
 
 @font-face {
-  font-family: "KoPubDotum";
-  src: url("../public/fonts/KoPub Dotum Medium.ttf");
+    font-display: swap;
+    font-family: "KoPubDotum";
+    src: local('KoPubWorldDotum'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Medium.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Medium.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Medium.otf') format('opentype');
 }
 
 @font-face {
-  font-family: "KoPubDotum";
-  src: url("../public/fonts/KoPub Dotum Bold.ttf");
-  font-weight: bold;
+    font-display: swap;
+    font-family: "KoPubDotum";
+    font-weight: bold;
+    src: local('KoPubWorldDotum'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Bold.woff2') format('woff2'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Bold.woff') format('woff'),
+    url('https://cdn.jsdelivr.net/npm/font-kopubworld@1.0/fonts/KoPubWorld-Dotum-Bold.otf') format('opentype');
 }
 
 /* without this, 'data-width: 100%' will not work. */
-.fb-comments, .fb-comments span, .fb-comments iframe { width: 100% !important; }
+.fb-comments, .fb-comments span, .fb-comments iframe {
+    width: 100% !important;
+}
