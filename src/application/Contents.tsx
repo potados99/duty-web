@@ -85,7 +85,7 @@ const Side = styled.div`
   @media (min-width: 1000px) {
     display: unset;
     width: 400px;
-    height: 1px; // if full height it will not float.
+    height: 100%;
     position: sticky;
     position: -webkit-sticky;
     top: 0;
