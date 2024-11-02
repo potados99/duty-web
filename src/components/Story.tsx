@@ -3,6 +3,7 @@ import { LinkedButton, PrimaryTextInverse, TitleTextInverse } from "./palette";
 import styled from "styled-components";
 import { useInView } from "react-intersection-observer";
 import FadeIn from "react-fade-in";
+import AsyncImage from "./AsyncImage";
 
 type Props = {
   title: string;
@@ -37,7 +38,7 @@ export default function Story({
         {actionLabel} {">"}
       </LinkedButton>
 
-      <img src={image} width="100%" />
+      <AsyncImage alt={body} src={image} width="100%" />
     </Wrapper>
   );
 }
