@@ -9,16 +9,6 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.png" />
     <link rel="apple-touch-icon" href="%PUBLIC_URL%/touch-icon.png" />
 
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KCVBEKGZ5"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-
-      gtag('config', 'G-6KCVBEKGZ5');
-    </script>
-
     <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
@@ -33,10 +23,6 @@
   <body>
     <noscript>자바스크립트 켜 주세욧!</noscript>
 
-    <!-- 댓글 플러그인 셋업을 위한 페이스북과의 불편한 동거 -->
-    <div id="fb-root"></div>
-    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/all.js#xfbml=1&version=v16.0" nonce="O2oWhrzN"></script>
-
     <div id="root"></div>
     <!--
       This HTML file is a template.
@@ -48,5 +34,20 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
+
+    <!-- Google tag (gtag.js) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-6KCVBEKGZ5"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'G-6KCVBEKGZ5');
+    </script>
+
+    <!-- 댓글 플러그인 셋업을 위한 페이스북과의 불편한 동거 -->
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/ko_KR/all.js#xfbml=1&version=v16.0" nonce="O2oWhrzN"></script>
+
   </body>
 </html>
