@@ -6,7 +6,7 @@ export default function HowIsHeGoing() {
     <Story
       title="소식"
       body="병준이는 군대에서 어떤 일을 겪고 있을까요?"
-      image="/images/hallway.png"
+      image="/images/hallway.webp"
       actionLabel="근황 보러 가기 (블로그)"
       actionHref="https://potados.tistory.com"
     />
