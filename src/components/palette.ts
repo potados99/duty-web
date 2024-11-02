@@ -61,3 +61,7 @@ export const Space = styled.div`
   height: 12px;
   background-color: #f9f9f9;
 `;
+
+export const HorizontalSpace = styled.div`
+  width: 6px;
+`;

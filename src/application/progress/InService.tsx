@@ -1,11 +1,18 @@
 import React from "react";
 import Schedule from "../../entities/Schedule";
 import ProgressBar from "react-bootstrap/ProgressBar";
-import { differenceInDays, differenceInMilliseconds } from "date-fns";
+import {
+  differenceInDays,
+  differenceInHours,
+  differenceInMilliseconds,
+} from "date-fns";
 import {
   BigText,
   Horizontal,
   HorizontalCenter,
+  HorizontalSpace,
+  PrimaryText,
+  Space,
   TitleText,
 } from "../../components/palette";
 import styled from "styled-components";
@@ -24,6 +31,7 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
   });
 
   const daysLeft = differenceInDays(lastSchedule.date, new Date());
+  const hoursLeft = differenceInHours(lastSchedule.date, new Date()) % 24;
   const daysPast = differenceInDays(new Date(), firstSchedule.date);
   const millisPast = differenceInMilliseconds(new Date(), firstSchedule.date);
   const millisTotal = differenceInMilliseconds(
@@ -40,12 +48,22 @@ export default function InService({ firstSchedule, lastSchedule }: Props) {
       <HorizontalCenter style={{ marginBottom: 21 }}>
         <TitleText>{lastSchedule.name}까지</TitleText>
         <FadeIn visible={inView}>
-          <Horizontal style={{ alignItems: "center" }}>
-            <AnimatedNumber
-              animateToNumber={daysLeft}
-              fontStyle={{ color: "#234", fontSize: 64, fontWeight: "bold" }}
-            />
-            <BigText>일</BigText>
+          <Horizontal style={{ alignItems: "baseline" }}>
+            <Horizontal style={{ alignItems: "center" }}>
+              <AnimatedNumber
+                animateToNumber={daysLeft}
+                fontStyle={{ color: "#234", fontSize: 64, fontWeight: "bold" }}
+              />
+              <BigText>일</BigText>
+            </Horizontal>
+            <HorizontalSpace />
+            <Horizontal style={{ alignItems: "baseline" }}>
+              <AnimatedNumber
+                animateToNumber={hoursLeft}
+                fontStyle={{ color: "#234", fontSize: 18, fontWeight: "bold" }}
+              />
+              <TitleText>시간</TitleText>
+            </Horizontal>
           </Horizontal>
         </FadeIn>
 
