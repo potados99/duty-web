@@ -8,7 +8,7 @@ export default function Cover() {
   return (
     <Wrapper onClick={() => window.scrollTo(0, window.innerHeight)}>
       <TitleBox>
-        <FadeIn delay={300} transitionDuration={600}>
+        <FadeIn delay={0} transitionDuration={600}>
           <BigText
             style={{
               color: "#234",
